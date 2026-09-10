@@ -13,10 +13,19 @@ npm install @robert.tools/eleventy-shortcodes-script-style
 ### 📝 Sample usage
 
 ```typescript
-import { eleventy-shortcodes-script-style } from '@robert.tools/eleventy-shortcodes-script-style';
-
-eleventy-shortcodes-script-style('hello'); // 'eleventy-shortcodes-script-style: hello'
+import { viteScriptTag } from '@robert.tools/eleventy-shortcodes-script-style';
 ```
+## 📜 Usage
+
+```typescript
+    eleventyConfig.addNunjucksShortcode('scriptTag', viteScriptTag);
+```
+
+```nunjucks
+    {% scriptTag entryFile, pathPrefix %}
+```
+* `entryFile` - The entry file for the script tag.
+* `pathPrefix` - The path prefix to prepend to the script file.
 
 ## 🗃️ commands
 After an npm install with `npm i` the following commands are available:
