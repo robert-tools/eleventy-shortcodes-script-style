@@ -1,21 +1,21 @@
-# 🗂️ @robert.tools/sample
+# 🗂️ @robert.tools/eleventy-shortcodes-script-style
 
-<description>
+A collections of shortcodes to include a script and style tag.
 
 ## 📜 Usage
 
 ### 🟢 Installation
 
 ```bash
-npm install @robert.tools/sample
+npm install @robert.tools/eleventy-shortcodes-script-style
 ```
 
 ### 📝 Sample usage
 
 ```typescript
-import { <name> } from '@robert.tools/sample';
+import { eleventy-shortcodes-script-style } from '@robert.tools/eleventy-shortcodes-script-style';
 
-<name>('hello'); // '<name>: hello'
+eleventy-shortcodes-script-style('hello'); // 'eleventy-shortcodes-script-style: hello'
 ```
 
 ## 🗃️ commands
