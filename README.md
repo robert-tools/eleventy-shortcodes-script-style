@@ -20,6 +20,11 @@ import { viteScriptTag } from '@robert.tools/eleventy-shortcodes-script-style';
 ```typescript
     eleventyConfig.addNunjucksShortcode('scriptTag', viteScriptTag);
 ```
+You can use the following functions:
+
+* `viteScriptTag(entryFile, pathPrefix)` - Generates a script tag for the given entry file and path prefix.
+* `viteLegacyScriptTag(entryFile, pathPrefix)` - Generates a legacy script tag for the given entry file and path prefix.
+* `viteLinkStylesheetTags(entryFile, pathPrefix)` - Generates link tags for the CSS files associated with the given entry file and path prefix.
 
 ```nunjucks
     {% scriptTag entryFile, pathPrefix %}
